@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-recallgame-dev-172951-authRole",
+      "UnauthRoleArn": "arn:aws:iam::575124949619:role/amplify-recallgame-dev-172951-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::575124949619:role/amplify-recallgame-dev-172951-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-recallgame-dev-172951-deployment",
+      "UnauthRoleName": "amplify-recallgame-dev-172951-unauthRole",
+      "StackName": "amplify-recallgame-dev-172951",
+      "StackId": "arn:aws:cloudformation:us-east-1:575124949619:stack/amplify-recallgame-dev-172951/c25742a0-1364-11ee-a3b6-0a25c046e681",
+      "AmplifyAppId": "d1whd7v4gbu8pj"
+    },
+    "categories": {
+      "api": {
+        "recallgame": {}
+      },
+      "auth": {
+        "recallgamed3e81e4a": {}
+      }
+    }
+  }
+}
