@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React, {useEffect, useState} from 'react';
 import {
   StyleSheet,
@@ -17,6 +18,7 @@ import {
 import { Amplify } from 'aws-amplify';
 import awsExports from './src/aws-exports';
 import MainNavigator from './src/navigations/MainNavigator';
+import DrawerNavigator from './src/navigations/DrawerNavigator';
 Amplify.configure(awsExports);
 
 // retrieves only the current value of 'user' from 'useAuthenticator'
