@@ -11,7 +11,7 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigator = () => {
   return (
     <Drawer.Navigator screenOptions={{headerShown: false}}>
-      <Drawer.Screen name="Landing" component={TabNavigator} />
+      <Drawer.Screen name="Landing" options={{title: 'Home',}} component={TabNavigator} />
       <Drawer.Screen name="Profile" component={ProfileScreen} />
       <Drawer.Screen name="Settings" component={SettingsScreen} />
     </Drawer.Navigator>

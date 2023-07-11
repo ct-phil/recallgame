@@ -6,7 +6,7 @@ import FavoriteScreen from '../screens/FavoriteScreen';
 import Icon from '../components/Icon'
 import {colors, sizes} from '../constants/theme';
 import SearchScreen from '../screens/SearchScreen';
-
+ 
 
 const tabs = [
     {
