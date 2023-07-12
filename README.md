@@ -32,7 +32,7 @@
 
 # 📖 Setup Recall <a name="about-project"></a>
 
-> "Recall" is a tool that helps to organize your day. Built on react js.
+> "Recall" is a memory game built on react native.
 
 ## 🛠 Tech stack<a name="tech-stack"></a>
     React Native
