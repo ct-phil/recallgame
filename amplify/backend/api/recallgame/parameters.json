@@ -1,5 +1,6 @@
 {
   "AppSyncApiName": "recallgame",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-07-12T13:30:56.702Z"
 }

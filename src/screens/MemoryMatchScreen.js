@@ -2,6 +2,9 @@ import { SafeAreaView, Text, StyleSheet, View, Pressable } from 'react-native'
 import Card from '../components/Card'
 import * as React from 'react'
 import { useNavigation } from "@react-navigation/native"
+import { DataStore } from '@aws-amplify/datastore';
+import { UserScore } from '../models';
+import { Auth } from 'aws-amplify';
 
 
 const cards =[
@@ -31,6 +34,7 @@ const MemoryMatchScreen = () => {
       const timeoutId = setTimeout(() => setSelectedCards([]), 1000);
       return () => clearTimeout(timeoutId);
     }
+
   }, [selectedCards]);
 
   const handleTapCard = index => {
@@ -40,6 +44,23 @@ const MemoryMatchScreen = () => {
   };
 
   const didPlayerWin = () => matchedCards.length === board.length;
+
+  const saveScore = async () => {
+    try {
+      const userData = await Auth.currentAuthenticatedUser();
+      
+      const newUserScore = new UserScore({
+        userSub: userData.attributes.sub,
+        score,
+      });
+  
+      await DataStore.save(newUserScore);
+      console.log(userData);
+    } catch (error) {
+      // Handle the error appropriately (e.g., logging, displaying an error message)
+      console.log("Error saving score:", error);
+    }
+  };
 
   const resetGame = () => {
     setMatchedCards([]);

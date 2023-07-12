@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, ScrollView, Pressable, Text} from 'react-native';
+import {View, StyleSheet, ScrollView, Pressable, Text, TouchableOpacity} from 'react-native';
 import {colors} from '../constants/theme';
 import MainHeader from '../components/MainHeader';
 import ScreenHeader from '../components/ScreenHeader';
@@ -11,6 +11,8 @@ import {
   withAuthenticator,
   useAuthenticator,
 } from '@aws-amplify/ui-react-native';
+import {useState, useEffect} from 'react';
+import { Auth } from 'aws-amplify';
 
 
 const userSelector = (context) => [context.user]
@@ -18,25 +20,42 @@ const userSelector = (context) => [context.user]
 const SignOutButton = () => {
   const { user, signOut } = useAuthenticator(userSelector);
   return (
-    <Pressable onPress={signOut} style={styles.buttonContainer}>
-      <Text style={styles.buttonText}>
-        Hello, {user.username}! Click here to sign out!
-      </Text>
-    </Pressable>
+      <TouchableOpacity onPress={signOut} style={{ height: 40, marginTop: 10, width: 80, alignItems: 'center', borderRadius: 10, justifyContent: 'center', backgroundColor: '#68BBE3'}}>
+        <Text style={{color: 'black',}}>Sign Out</Text>
+      </TouchableOpacity>
   );
 };
 
 const HomeScreen = () => {
+
+  const [email, setEmail] = useState('');
+
+  useEffect(() => {
+    const fetchUserEmail = async () => {
+      try {
+        const user = await Auth.currentAuthenticatedUser();
+        const userEmail = user.attributes.email;
+        setEmail(userEmail);
+      } catch (error) {
+        console.log('Error fetching user email:', error);
+      }
+    };
+
+    fetchUserEmail();
+  }, []);
+  
   return (
     <View style={styles.container}>
       {/* <Text style={{color:'black'}}>Hello</Text> */}
       <MainHeader title="Recall" />
-      <ScreenHeader mainTitle="Choose" secondTitle="Game" />
+      <ScreenHeader mainTitle={`Hello, ${email}`} secondTitle="Select a game" />
       <ScrollView>
         <TopGamesCarousel list={TOP_PLACES}/>
         <SectionHeader title="Other Games" buttonTitle="See All" onPress={() => {}}/>
         <GamesList list={PLACES}/>
-        {/* <SignOutButton/> */}
+        <View style={{alignItems: 'center', justifyContent: 'center',}}>
+          <SignOutButton />
+        </View>
       </ScrollView>
     </View>
   )

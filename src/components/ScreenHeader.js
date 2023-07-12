@@ -17,12 +17,12 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.l,
   },
   mainTitle: {
-    fontSize: sizes.title,
+    fontSize: 24,
     fontWeight: 'bold',
     color: 'black',
   },
   secondTitle: {
-    fontSize: sizes.title,
+    fontSize: 20,
     color: 'black',
   },
 });

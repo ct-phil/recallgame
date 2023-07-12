@@ -1,45 +1,102 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const createUserDetails = /* GraphQL */ `
+  mutation CreateUserDetails(
+    $input: CreateUserDetailsInput!
+    $condition: ModelUserDetailsConditionInput
   ) {
-    createTodo(input: $input, condition: $condition) {
+    createUserDetails(input: $input, condition: $condition) {
       id
-      name
-      description
+      userSub
+      firstName
+      lastName
+      DOB
+      gender
+      phoneNumber
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
+export const updateUserDetails = /* GraphQL */ `
+  mutation UpdateUserDetails(
+    $input: UpdateUserDetailsInput!
+    $condition: ModelUserDetailsConditionInput
   ) {
-    updateTodo(input: $input, condition: $condition) {
+    updateUserDetails(input: $input, condition: $condition) {
       id
-      name
-      description
+      userSub
+      firstName
+      lastName
+      DOB
+      gender
+      phoneNumber
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
+export const deleteUserDetails = /* GraphQL */ `
+  mutation DeleteUserDetails(
+    $input: DeleteUserDetailsInput!
+    $condition: ModelUserDetailsConditionInput
   ) {
-    deleteTodo(input: $input, condition: $condition) {
+    deleteUserDetails(input: $input, condition: $condition) {
       id
-      name
-      description
+      userSub
+      firstName
+      lastName
+      DOB
+      gender
+      phoneNumber
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const createUserScore = /* GraphQL */ `
+  mutation CreateUserScore(
+    $input: CreateUserScoreInput!
+    $condition: ModelUserScoreConditionInput
+  ) {
+    createUserScore(input: $input, condition: $condition) {
+      id
+      userSub
+      score
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const updateUserScore = /* GraphQL */ `
+  mutation UpdateUserScore(
+    $input: UpdateUserScoreInput!
+    $condition: ModelUserScoreConditionInput
+  ) {
+    updateUserScore(input: $input, condition: $condition) {
+      id
+      userSub
+      score
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const deleteUserScore = /* GraphQL */ `
+  mutation DeleteUserScore(
+    $input: DeleteUserScoreInput!
+    $condition: ModelUserScoreConditionInput
+  ) {
+    deleteUserScore(input: $input, condition: $condition) {
+      id
+      userSub
+      score
       createdAt
       updatedAt
       __typename

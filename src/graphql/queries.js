@@ -1,29 +1,69 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getTodo = /* GraphQL */ `
-  query GetTodo($id: ID!) {
-    getTodo(id: $id) {
+export const getUserDetails = /* GraphQL */ `
+  query GetUserDetails($id: ID!) {
+    getUserDetails(id: $id) {
       id
-      name
-      description
+      userSub
+      firstName
+      lastName
+      DOB
+      gender
+      phoneNumber
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const listTodos = /* GraphQL */ `
-  query ListTodos(
-    $filter: ModelTodoFilterInput
+export const listUserDetails = /* GraphQL */ `
+  query ListUserDetails(
+    $filter: ModelUserDetailsFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listUserDetails(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        name
-        description
+        userSub
+        firstName
+        lastName
+        DOB
+        gender
+        phoneNumber
+        createdAt
+        updatedAt
+        __typename
+      }
+      nextToken
+      __typename
+    }
+  }
+`;
+export const getUserScore = /* GraphQL */ `
+  query GetUserScore($id: ID!) {
+    getUserScore(id: $id) {
+      id
+      userSub
+      score
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const listUserScores = /* GraphQL */ `
+  query ListUserScores(
+    $filter: ModelUserScoreFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listUserScores(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        userSub
+        score
         createdAt
         updatedAt
         __typename
