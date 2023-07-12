@@ -79,7 +79,7 @@ Run this command:
 
 ```sh
   cd my-folder
-  git clone https://github.com/ct-phil/recall.git
+  git clone (https://github.com/ct-phil/recallgame.git)
 ```
 
 ### Install
@@ -141,7 +141,7 @@ If everything is set up _correctly_, you should see your new app running in your
 
 
 👤 Jackson Lowasa
-- GitHub: [@githubhandle](https://github.com/kamranasif506)
+- GitHub: [@githubhandle](https://github.com/lowasa)
 
 👤 Phil Ogutu
 
@@ -168,8 +168,6 @@ If everything is set up _correctly_, you should see your new app running in your
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/migo1/react-toDo/issues).
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
@@ -184,7 +182,7 @@ If you like this project just give it a star ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse.
+Acknowledgements.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
