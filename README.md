@@ -2,10 +2,8 @@
 
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <br/>
-
-  <h3><b>Recall</b></h3>
+  
+  <h1><b>Recall</b></h1>
 
 
 </div>
