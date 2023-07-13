@@ -30,7 +30,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Setup Recall <a name="about-project"></a>
+## 📖 About the Project <a name="about-project"></a>
 
 > "Recall" is an interactive and engaging platform that delivers personalized memory training techniques.
 
