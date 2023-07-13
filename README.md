@@ -32,7 +32,7 @@
 
 # 📖 Setup Recall <a name="about-project"></a>
 
-> "Recall" is a memory game built on react native.
+> "Recall" is an interactive and engaging platform that delivers personalized memory training techniques.
 
 ## 🛠 Tech stack<a name="tech-stack"></a>
     React Native
