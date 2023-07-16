@@ -7,6 +7,8 @@ import TabNavigator from './TabNavigator';
 import { StatusBar } from "react-native";
 import MemoryMatchScreen from '../screens/MemoryMatchScreen';
 import DrawerNavigator from './DrawerNavigator';
+import SelectLevelScreen from '../screens/SelectLevelScreen';
+import MemoryMatchScreenLvlZero from '../screens/MemoryMatchScreenLvlZero';
 
 
 
@@ -22,9 +24,19 @@ const MainNavigator = () => {
               component={DrawerNavigator}
               options={{headerShown: false,}} 
             />
-              <Stack.Screen 
+            <Stack.Screen 
               name="MemoryMatch" 
               component={MemoryMatchScreen}
+              options={{headerShown: false,}} 
+            />
+            <Stack.Screen 
+              name="MemoryMatchLvlZero" 
+              component={MemoryMatchScreenLvlZero}
+              options={{headerShown: false,}} 
+            />
+             <Stack.Screen 
+              name="SelectLevel" 
+              component={SelectLevelScreen}
               options={{headerShown: false,}} 
             />
         </Stack.Navigator>     

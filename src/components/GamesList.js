@@ -18,7 +18,7 @@ const GamesList = ({list}) => {
             style={styles.cardContainer} 
             key={item.id} 
             onPress={() => {
-             navigation.navigate('MemoryMatch');
+             navigation.navigate('SelectLevel');
             }}
             >
             <View style={[styles.card, shadow.light]} >

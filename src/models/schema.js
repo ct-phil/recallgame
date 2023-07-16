@@ -34,7 +34,7 @@ export const schema = {
                 "DOB": {
                     "name": "DOB",
                     "isArray": false,
-                    "type": "Int",
+                    "type": "String",
                     "isRequired": false,
                     "attributes": []
                 },
@@ -48,7 +48,7 @@ export const schema = {
                 "phoneNumber": {
                     "name": "phoneNumber",
                     "isArray": false,
-                    "type": "Int",
+                    "type": "String",
                     "isRequired": false,
                     "attributes": []
                 },
@@ -164,5 +164,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.4.4",
-    "version": "4b70f66e3770c76116daff9c5d2ddc23"
+    "version": "bfa94539b1bf8fa83df524bb8d55c34b"
 };

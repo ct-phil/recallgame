@@ -15,9 +15,9 @@ type EagerUserDetails = {
   readonly userSub: string;
   readonly firstName: string;
   readonly lastName: string;
-  readonly DOB?: number | null;
+  readonly DOB?: string | null;
   readonly gender?: string | null;
-  readonly phoneNumber?: number | null;
+  readonly phoneNumber?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -31,9 +31,9 @@ type LazyUserDetails = {
   readonly userSub: string;
   readonly firstName: string;
   readonly lastName: string;
-  readonly DOB?: number | null;
+  readonly DOB?: string | null;
   readonly gender?: string | null;
-  readonly phoneNumber?: number | null;
+  readonly phoneNumber?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

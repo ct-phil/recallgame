@@ -4,7 +4,7 @@ import {colors} from '../constants/theme';
 import MainHeader from '../components/MainHeader';
 import ScreenHeader from '../components/ScreenHeader';
 import TopGamesCarousel from '../components/TopGamesCarousel';
-import {PLACES, TOP_PLACES} from '../data';
+import {GAMES, TOP_GAMES} from '../data';
 import SectionHeader from '../components/SectionHeader';
 import GamesList from '../components/GamesList';
 import {
@@ -48,13 +48,13 @@ const HomeScreen = () => {
     <View style={styles.container}>
       {/* <Text style={{color:'black'}}>Hello</Text> */}
       <MainHeader title="Recall" />
-      <ScreenHeader mainTitle={`Hello, ${email}`} secondTitle="Select a game" />
+      <ScreenHeader mainTitle={`Hello, ${email.split('@')[0]}`} secondTitle="Select a game" />
       <ScrollView>
-        <TopGamesCarousel list={TOP_PLACES}/>
+        <TopGamesCarousel list={TOP_GAMES}/>
         <SectionHeader title="Other Games" buttonTitle="See All" onPress={() => {}}/>
-        <GamesList list={PLACES}/>
+        <GamesList list={GAMES}/>
         <View style={{alignItems: 'center', justifyContent: 'center',}}>
-          <SignOutButton />
+          {/* <SignOutButton /> */}
         </View>
       </ScrollView>
     </View>

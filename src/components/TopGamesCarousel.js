@@ -11,6 +11,7 @@ import {colors, shadow, sizes, spacing} from '../constants/theme';
 import FavoriteButton from './FavouriteButton';
 import { useNavigation } from "@react-navigation/native"
 
+
 const CARD_WIDTH = sizes.width - 40;
 const CARD_HEIGHT = 200;
 const CARD_WIDTH_SPACING = CARD_WIDTH + spacing.l;
@@ -30,7 +31,7 @@ const TopGamesCarousel = ({list}) => {
         return (
           <TouchableOpacity
             onPress={() => {
-             navigation.navigate('MemoryMatch');
+             navigation.navigate('SelectLevel');
             }}
             style={{
               marginLeft: spacing.l,

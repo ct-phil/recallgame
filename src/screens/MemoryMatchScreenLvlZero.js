@@ -12,11 +12,13 @@ const cards =[
   "🐷",
   "🥑",
   "👻",
-  "🌎",
-  "🔑",
+//   "🌎",
+//   "🔑",
+  
+  
 ]
 
-const MemoryMatchScreen = () => {
+const MemoryMatchScreenLvlZero = () => {
   const [board, setBoard] = React.useState(() => shuffle([...cards, ...cards]))
   const [selectedCards, setSelectedCards] = React.useState([]);
   const [matchedCards, setMatchedCards] = React.useState([]);
@@ -157,4 +159,4 @@ function shuffle(array) {
   return array;
 }
 
-export default MemoryMatchScreen;
+export default MemoryMatchScreenLvlZero;
