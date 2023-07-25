@@ -157,6 +157,8 @@ If everything is set up _correctly_, you should see your new app running in your
 
 
 - [ ] Drag and drop functionality to re-arrange the tasks.
+- [ ] Multiplayer Mode to enable players to compete or collaborate with friends online.
+- [ ] Integrating virtual reality (VR) or augmented reality (AR) to provide players with an interactive gaming experience.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
