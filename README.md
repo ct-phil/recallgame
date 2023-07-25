@@ -32,7 +32,7 @@
 
 ## 📖 About the Project <a name="about-project"></a>
 
-> "Recall" is an interactive and engaging platform that delivers personalized memory training techniques.
+> "Recall" is a dynamic and captivating platform designed to offer personalized memory training techniques.
 
 ## 🛠 Tech stack<a name="tech-stack"></a>
     React Native
@@ -51,7 +51,7 @@
 
 - configured React
 - React componeent to update the task status
-- Reaact Component to clear all completed tasks 
+- React Component to clear all completed tasks 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
